@@ -1,45 +1,101 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="hu">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rólam</title>
+  <title>Személyes weboldal</title>
   <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
     body {
       font-family: sans-serif;
-      margin: 2rem;
-      background-color: #f2f2f2;
+      background-color: #f9f9f9;
       color: #333;
+      text-align: center;
     }
-    header {
-      border-bottom: 1px solid #ccc;
-      margin-bottom: 2rem;
+
+    /* 🔹 Menüsor */
+    nav {
+      background-color: #ffffff;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
-    h1 {
-      color: #2c3e50;
-    }
-    a {
-      color: #0077cc;
+
+    nav a {
       text-decoration: none;
+      color: #333;
+      margin: 0 20px;
+      font-weight: 500;
+      font-size: 16px;
+      transition: color 0.2s;
     }
+
+    nav a:hover {
+      color: #0077cc;
+    }
+
+    /* 🔹 Elválasztó vonal */
+    .divider {
+      width: 100%;
+      height: 1px;
+      background-color: #ddd;
+      margin: 0 auto;
+    }
+
+    /* 🔹 Banner kép */
+    .banner {
+      max-width: 100%;
+      margin-top: 20px;
+    }
+
+    .banner img {
+      width: 100%;
+      max-width: 1600px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      border-radius: 4px;
+    }
+
+    /* 🔹 Welcome szöveg */
+    .welcome {
+      margin-top: 30px;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
   </style>
 </head>
 <body>
-  <header>
-    <h1>Szia, én vagyok a te weblapod!</h1>
-    <p>Ez egy egyszerű statikus bemutatkozó oldal.</p>
-  </header>
-  <section>
-    <h2>Bemutatkozás</h2>
-    <p>Itt írhatsz magadról: ki vagy, mivel foglalkozol, és mit szeretnél megosztani.</p>
-  </section>
-  <section>
-    <h2>Elérhetőség</h2>
-    <ul>
-      <li>Email: pelda@email.com</li>
-      <li>GitHub: <a href="https://github.com/felhasznalonev" target="_blank">GitHub profilom</a></li>
-    </ul>
-  </section>
+
+  <!-- 🔸 Menüsor -->
+  <nav>
+    <a href="#research">Research</a>
+    <a href="#cv">CV</a>
+  </nav>
+
+  <!-- 🔸 Elválasztó vonal -->
+  <div class="divider"></div>
+
+  <!-- 🔸 Kép -->
+  <div class="banner">
+    <img src="kepek/banner.jpg" alt="Bemutatkozó kép">
+  </div>
+
+  <!-- 🔸 Welcome szöveg -->
+  <div class="welcome">
+    Welcome!
+  </div>
+
 </body>
 </html>
