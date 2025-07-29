@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <title>Balint Kiraly, PhD</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
   <style>
     * {
       box-sizing: border-box;
@@ -13,20 +13,20 @@
     }
 
     body {
-  font-family: 'Inter', sans-serif;
-  background-color: #f9f9f9;
-  color: #333;
-  text-align: center;
-}
-
-    /* 🔹 Menüsor */
-    nav {
+      font-family: 'IBM Plex Sans', sans-serif;
       background-color: #ffffff;
-      height: 50px;
+      color: #1a1a1a;
+      text-align: center;
+      line-height: 1.6;
+    }
+
+    nav {
+      background-color: #fff;
+      height: 60px;
       display: flex;
       justify-content: center;
       align-items: center;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
       position: sticky;
       top: 0;
       z-index: 1000;
@@ -34,10 +34,11 @@
 
     nav a {
       text-decoration: none;
-      color: #333;
-      margin: 0 20px;
-      font-weight: 500;
-      font-size: 16px;
+      color: #1a1a1a;
+      margin: 0 25px;
+      font-weight: 600;
+      font-size: 15px;
+      font-family: 'Inter', sans-serif;
       transition: color 0.2s;
     }
 
@@ -45,18 +46,28 @@
       color: #0077cc;
     }
 
-    /* 🔹 Elválasztó vonal */
-    .divider {
-      width: 100%;
-      height: 1px;
-      background-color: #ddd;
-      margin: 0 auto;
+    .container {
+      max-width: 700px;
+      margin: 60px auto 40px;
+      padding: 0 20px;
+      text-align: left;
     }
 
-    /* 🔹 Banner kép */
-    .banner {
-      max-width: 100%;
-      margin-top: 20px;
+    .intro {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .name {
+      font-size: 28px;
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+
+    .title {
+      font-size: 18px;
+      color: #666;
+      margin-bottom: 30px;
     }
 
     .banner img {
@@ -64,52 +75,43 @@
       max-width: 650px;
       height: auto;
       display: block;
-      margin: 0 auto;
-      border-radius: 4px;
+      margin: 0 auto 30px;
+      border-radius: 6px;
     }
-
-        /* 🔹 Bemutatkozo */
-.bemutatkozo {
-  max-width: 650px; /* ugyanaz, mint a banner kép */
-  margin: 25px auto; /* középre igazítás */
-  font-size: 14px;
-  text-align: justify; /* sorkizárt szöveg */
-  line-height: 1.6; /* jobb olvashatóság */
-  padding: 0 15px; /* belső margó a mobilhoz */
-}
   </style>
 </head>
 <body>
 
-  <!-- 🔸 Menüsor -->
   <nav>
     <a href="#research">Research</a>
     <a href="#cv">CV</a>
   </nav>
 
-  <!-- 🔸 Elválasztó vonal -->
-  <div class="divider"></div>
+  <div class="container">
+    <div class="name">Balint Kiraly, PhD</div>
+    <div class="title">Postdoctoral Researcher in Cognitive Neuroscience</div>
 
-  <!-- 🔸 Kép -->
-  <div class="banner">
-    <img src="kepek/banner.jpg" alt="Bemutatkozó kép">
-  </div>
-    <!-- 🔸 Bemutatkozo -->
-  <div class="bemutatkozo">
-     <p>
-    I am a neuroscientist interested in how the brain adapts to changing environmental conditions. 
-    My primary focus is on neuromodulatory processes that can enable the brain's remarkable capacity for dynamic adaptation.
-  </p>
-  <p>
-    To investigate these mechanisms, I integrate methods from artificial intelligence and physics to analyze neural data 
-    and build models of underlying network dynamics. 
-  </p>
-  <p>
-    By combining experimental neuroscience with computational and theoretical approaches, I aim to uncover the principles 
-    of learning and plasticity in the healthy brain—and how these processes are disrupted in neurological disorders such as 
-    Alzheimer's and Parkinson's disease.
-  </p>
+    <div class="banner">
+      <img src="kepek/banner.jpg" alt="Bemutatkozó kép">
+    </div>
+
+    <div class="intro">
+      <p>
+        I am a neuroscientist interested in how the brain adapts to changing environmental conditions.
+        My primary focus is on neuromodulatory processes that can enable the brain's remarkable capacity for dynamic adaptation.
+      </p>
+      <p>
+        To investigate these mechanisms, I integrate methods from artificial intelligence and physics to analyze neural data 
+        and build models of underlying network dynamics.
+      </p>
+      <p>
+        By combining experimental neuroscience with computational and theoretical approaches, I aim to uncover the principles 
+        of learning and plasticity in the healthy brain—and how these processes are disrupted in neurological disorders such as 
+        Alzheimer's and Parkinson's disease.
+      </p>
+    </div>
   </div>
 
 </body>
 </html>
+
