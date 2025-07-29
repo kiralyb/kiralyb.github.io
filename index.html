@@ -53,26 +53,28 @@
     }
 
     .highlight-section {
-      background-color: #f1f4f4; /* világosított árnyalat */
+      background-color: #fdfefe; /* világosított háttérszín */
       color: #1a1a1a;
-      padding: 60px 20px 30px;
-      text-align: center;
+      padding: 20px 20px 10px;
+      text-align: left;
     }
 
     .name {
-      font-size: 32px;
+      font-size: 30px;
       font-weight: 600;
-      margin-bottom: 8px;
+      margin-bottom: 4px;
+      text-align: left;
     }
 
     .title {
       font-size: 18px;
       color: #444;
-      margin-bottom: 30px;
+      margin-bottom: 10px;
+      text-align: left;
     }
 
     .banner {
-      background-color: #f1f4f4; /* világosított árnyalat */
+      background-color: #fdfefe;
       padding-bottom: 30px;
     }
 
@@ -83,6 +85,9 @@
       display: block;
       margin: 0 auto;
       border-radius: 6px;
+      filter: grayscale(30%) contrast(110%);
+      mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
+      -webkit-mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
     }
 
     .intro {
