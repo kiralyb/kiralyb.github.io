@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Balint Kiraly, PhD</title>
+  <link rel="icon" type="image/png" href="favicon.png">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
   <style>
     * {
@@ -16,8 +17,7 @@
       font-family: 'IBM Plex Sans', sans-serif;
       background-color: #ffffff;
       color: #1a1a1a;
-      text-align: center;
-      line-height: 1.6;
+      line-height: 1.7;
     }
 
     nav {
@@ -48,26 +48,32 @@
 
     .container {
       max-width: 700px;
-      margin: 60px auto 40px;
+      margin: 0 auto;
       padding: 0 20px;
-      text-align: left;
     }
 
-    .intro {
-      font-size: 18px;
-      margin-bottom: 20px;
+    .highlight-section {
+      background-color: #6e8c8c; /* zöldes-szürkés-kékes árnyalat */
+      color: #ffffff;
+      padding: 60px 20px 30px;
+      text-align: center;
     }
 
     .name {
-      font-size: 28px;
+      font-size: 32px;
       font-weight: 600;
-      margin-bottom: 5px;
+      margin-bottom: 8px;
     }
 
     .title {
       font-size: 18px;
-      color: #666;
+      color: #e0e0e0;
       margin-bottom: 30px;
+    }
+
+    .banner {
+      background-color: #6e8c8c; /* azonos háttérszín a kép mögött */
+      padding-bottom: 30px;
     }
 
     .banner img {
@@ -75,8 +81,53 @@
       max-width: 650px;
       height: auto;
       display: block;
-      margin: 0 auto 30px;
+      margin: 0 auto;
       border-radius: 6px;
+    }
+
+    .intro {
+      font-size: 16px;
+      text-align: justify;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      padding: 40px 0;
+    }
+
+    .intro span {
+      font-size: 20px;
+      font-weight: 600;
+      display: block;
+      margin-bottom: 5px;
+      color: #1a1a1a;
+    }
+
+    .point-list {
+      margin-top: 10px;
+      padding-left: 20px;
+    }
+
+    .point-list li {
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 600px) {
+      .name {
+        font-size: 24px;
+      }
+
+      .title {
+        font-size: 16px;
+      }
+
+      .intro {
+        font-size: 15px;
+      }
+
+      nav a {
+        margin: 0 15px;
+        font-size: 14px;
+      }
     }
   </style>
 </head>
@@ -87,28 +138,32 @@
     <a href="#cv">CV</a>
   </nav>
 
-  <div class="container">
-    <div class="name">Balint Kiraly, PhD</div>
-    <div class="title">Postdoctoral Researcher in Cognitive Neuroscience</div>
-
-    <div class="banner">
-      <img src="kepek/banner.jpg" alt="Bemutatkozó kép">
+  <div class="highlight-section">
+    <div class="container">
+      <div class="name">Balint Kiraly, PhD</div>
+      <div class="title">Postdoctoral Researcher in Cognitive Neuroscience</div>
     </div>
+  </div>
 
+  <div class="banner">
+    <img src="kepek/banner.jpg" alt="Bemutatkozó kép">
+  </div>
+
+  <div class="container">
     <div class="intro">
-      <p>
-        I am a neuroscientist interested in how the brain adapts to changing environmental conditions.
-        My primary focus is on neuromodulatory processes that can enable the brain's remarkable capacity for dynamic adaptation.
-      </p>
-      <p>
-        To investigate these mechanisms, I integrate methods from artificial intelligence and physics to analyze neural data 
-        and build models of underlying network dynamics.
-      </p>
-      <p>
-        By combining experimental neuroscience with computational and theoretical approaches, I aim to uncover the principles 
-        of learning and plasticity in the healthy brain—and how these processes are disrupted in neurological disorders such as 
-        Alzheimer's and Parkinson's disease.
-      </p>
+      <p><span>🔍 What drives me</span> I am a neuroscientist fascinated by how the brain adapts to ever-changing environments. I focus on neuromodulatory processes that support this remarkable flexibility.</p>
+
+      <p><span>🧠 How I explore</span> I combine tools from artificial intelligence and physics to model and analyze neural dynamics.</p>
+
+      <p><span>🎯 My research goals</span> I aim to uncover core principles of learning and plasticity in the healthy brain—and how these are disrupted in neurodegenerative diseases.</p>
+
+      <p><span>Key areas of focus:</span></p>
+      <ul class="point-list">
+        <li>Neural adaptation and plasticity</li>
+        <li>Neuromodulation and network-level changes</li>
+        <li>Computational modeling using AI tools</li>
+        <li>Bridging theory and experiment in brain research</li>
+      </ul>
     </div>
   </div>
 
