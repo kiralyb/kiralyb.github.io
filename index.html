@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html lang="hu">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Balint Kiraly, PhD</title>
-  <link rel="icon" type="image/png" href="favicon.png" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=IBM+Plex+Sans:wght@400;600&display=swap"
-    rel="stylesheet"
-  />
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
   <style>
     * {
       box-sizing: border-box;
@@ -56,9 +53,9 @@
     }
 
     .highlight-section {
-      background-color: #f1f4f5; /* halvány zöldes-szürkés-kékes árnyalat */
+      background-color: #f1f4f5;
       color: #1a1a1a;
-      padding: 15px 20px 5px;
+      padding: 10px 20px 5px;
       text-align: left;
     }
 
@@ -79,6 +76,7 @@
     .banner {
       background-color: #f1f4f5;
       padding-bottom: 30px;
+      position: relative;
     }
 
     .banner img {
@@ -87,8 +85,23 @@
       object-fit: cover;
       display: block;
       margin: 0 auto;
-      border-radius: 50%;
+      border-radius: 20px;
       filter: grayscale(30%) contrast(110%);
+    }
+
+    .name-overlay {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(255, 255, 255, 0.7);
+      padding: 10px 20px;
+      border-radius: 10px;
+      font-size: 18px;
+      font-weight: 600;
+      color: #1a1a1a;
+      text-align: center;
+      max-width: 90%;
     }
 
     .intro {
@@ -109,7 +122,7 @@
     }
 
     .point-list {
-      margin-top: 10px;
+      margin-top: 0;
       padding-left: 20px;
     }
 
@@ -139,10 +152,16 @@
         width: 180px;
         height: 180px;
       }
+
+      .name-overlay {
+        font-size: 16px;
+        padding: 8px 16px;
+      }
     }
   </style>
 </head>
 <body>
+
   <nav>
     <a href="#research">Research</a>
     <a href="#cv">CV</a>
@@ -156,19 +175,13 @@
   </div>
 
   <div class="banner">
-    <img src="kepek/banner.jpg" alt="Bemutatkozó kép" />
+    <img src="kepek/banner.jpg" alt="Bemutatkozó kép">
+    <div class="name-overlay">Balint Kiraly, PhD</div>
   </div>
 
   <div class="container">
     <div class="intro">
-      <p>
-        <span>About me</span> I am a neuroscientist fascinated by how the brain adapts
-        to ever-changing environments. I focus on neuromodulatory processes that support this
-        remarkable flexibility. I combine tools from artificial intelligence and physics to
-        model and analyze neural dynamics. My goal is to uncover the principles of learning and
-        plasticity in the healthy brain—and how these processes are disrupted in
-        neurodegenerative diseases.
-      </p>
+      <p><span>About me</span> I am a neuroscientist fascinated by how the brain adapts to ever-changing environments. I focus on neuromodulatory processes that support this remarkable flexibility. I combine tools from artificial intelligence and physics to model and analyze neural dynamics. My goal is to uncover the principles of learning and plasticity in the healthy brain—and how these processes are disrupted in neurodegenerative diseases.</p>
 
       <p><span>Key areas of focus:</span></p>
       <ul class="point-list">
@@ -179,5 +192,6 @@
       </ul>
     </div>
   </div>
+
 </body>
 </html>
