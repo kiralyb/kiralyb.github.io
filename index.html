@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="hu">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Balint Kiraly, PhD</title>
-  <link rel="icon" type="image/png" href="favicon.png">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet" />
   <style>
     * {
       box-sizing: border-box;
@@ -115,6 +115,16 @@
       margin-bottom: 6px;
     }
 
+    /* Link fekete színnel, aláhúzással hoverre */
+    .container a {
+      color: black;
+      text-decoration: none;
+    }
+
+    .container a:hover {
+      text-decoration: underline;
+    }
+
     @media (max-width: 600px) {
       .name {
         font-size: 24px;
@@ -157,12 +167,27 @@
   </div>
 
   <div class="banner">
-    <img src="kepek/banner.jpg" alt="Bemutatkozó kép">
+    <img src="kepek/banner.jpg" alt="Bemutatkozó kép" />
   </div>
 
   <div class="container">
     <div class="intro">
-      <p><span>About me</span> I am a neuroscientist fascinated by how the brain adapts to ever-changing environments. I focus on neuromodulatory processes that support this remarkable flexibility. I combine tools from artificial intelligence and physics to model and analyze neural dynamics. My goal is to uncover the principles of learning and plasticity in the healthy brain—and how these processes are disrupted in neurodegenerative diseases. Currently, I work as a postdoctoral researcher at the <a href="https://data-science.meduniwien.ac.at/institute/artificial-intelligence/team/" target="_blank">Medical University of Vienna</a>, in the Department of Artificial Intelligence and Decision Support. In 2025, I was awarded the prestigious <strong>EMBO Postdoctoral Fellowship</strong> to support my research on <strong>neuromodulator-mediated continual learning</strong>.</p>
+      <p>
+        <span>About me</span>
+        I am a neuroscientist fascinated by how the brain adapts to ever-changing environments. I focus on neuromodulatory
+        processes that support this remarkable flexibility. I combine tools from artificial intelligence and physics to model
+        and analyze neural dynamics. My goal is to uncover the principles of learning and plasticity in the healthy brain—and how
+        these processes are disrupted in neurodegenerative diseases.
+        <br /><br />
+        Currently, I work as a postdoctoral researcher at the
+        <a href="https://data-science.meduniwien.ac.at/institute/artificial-intelligence/team/" target="_blank" rel="noopener noreferrer">
+          Medical University of Vienna
+        </a>,
+        in the Department of Artificial Intelligence and Decision Support.
+        <br /><br />
+        In 2025, I was honored to receive the <strong>EMBO Postdoctoral Fellowship</strong>. My research focuses on
+        <em>neuromodulator-mediated continual learning</em>, exploring how the brain continuously adapts through neuromodulatory mechanisms.
+      </p>
 
       <p><span>Key areas of focus:</span></p>
       <ul class="point-list">
@@ -176,4 +201,3 @@
 
 </body>
 </html>
-
