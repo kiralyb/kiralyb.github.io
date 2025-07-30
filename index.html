@@ -118,7 +118,6 @@
       flex-direction: column;
       gap: 10px;
       padding: 0px 0;
-      margin-top: -40px;
     }
 
     .intro span {
@@ -148,20 +147,15 @@
     }
 
     @media (max-width: 600px) {
-      nav {
-        height: 50px;
-      }
-
       .nav-logo {
-        height: 50px;
-        top: 0;
+        height: 55px;
+        top: 3px;
         left: 10px;
       }
 
       .nav-links {
-        gap: 12px;
-        flex-wrap: nowrap;
-        font-size: 13px;
+        gap: 15px;
+        flex-wrap: wrap;
         top: 50%;
         transform: translate(-50%, -50%);
       }
@@ -171,31 +165,32 @@
       }
 
       .name {
-        font-size: 24px;
+        font-size: 22px;
       }
 
       .title {
-        font-size: 15px;
-      }
-
-      .intro {
-        font-size: 15px;
-        margin-top: -30px;
+        font-size: 14px;
       }
 
       .profile-img {
         width: 160px;
         height: 160px;
-        left: 30px;
+        left: 80px; /* kisebb eltolás */
       }
 
       .banner {
-        margin-top: -60px;
+        margin-top: -60px; /* kevesebb átfedés */
+      }
+
+      .intro {
+        font-size: 15px;
+        padding-top: 10px;
       }
     }
   </style>
 </head>
 <body>
+
   <nav>
     <img src="logo.png" alt="Logo" class="nav-logo" />
     <div class="nav-links">
@@ -250,5 +245,6 @@
       </ul>
     </div>
   </div>
+
 </body>
 </html>
