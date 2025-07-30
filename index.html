@@ -22,7 +22,7 @@
 
     nav {
       background-color: #fff;
-      height: 60px; /* kisebb menüsor */
+      height: 60px; /* menüsor magasság marad */
       position: sticky;
       top: 0;
       z-index: 1000;
@@ -31,10 +31,10 @@
     }
 
     .nav-logo {
-      height: 90px; /* logó mérete marad nagy */
+      height: 90px; /* logó nagy méret */
       position: absolute;
       left: 30px;
-      top: -15px; /* így kilóg egy kicsit a nav-ból, látványosabb */
+      top: 5px; /* picit lejjebb került */
       z-index: 2;
     }
 
@@ -141,7 +141,7 @@
     @media (max-width: 600px) {
       .nav-logo {
         height: 60px;
-        top: 0;
+        top: 5px;
         left: 15px;
       }
 
