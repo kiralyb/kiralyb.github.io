@@ -118,6 +118,7 @@
       flex-direction: column;
       gap: 10px;
       padding: 0px 0;
+      margin-top: -40px; /* fentebb hozza a szöveget */
     }
 
     .intro span {
@@ -148,43 +149,46 @@
 
     @media (max-width: 600px) {
       .nav-logo {
-        height: 55px;
-        top: 3px;
-        left: 10px;
+        height: 60px;
+        top: 5px;
+        left: 15px;
       }
 
       .nav-links {
-        gap: 15px;
+        gap: 20px;
         flex-wrap: wrap;
         top: 50%;
         transform: translate(-50%, -50%);
       }
 
       nav a {
-        font-size: 13px;
-      }
-
-      .name {
-        font-size: 22px;
-      }
-
-      .title {
         font-size: 14px;
       }
 
-      .profile-img {
-        width: 160px;
-        height: 160px;
-        left: 80px; /* kisebb eltolás */
+      .name {
+        font-size: 22px; /* kisebb cím mobilon */
       }
 
-      .banner {
-        margin-top: -60px; /* kevesebb átfedés */
+      .title {
+        font-size: 14px; /* kisebb alcímek mobilon */
       }
 
       .intro {
         font-size: 15px;
-        padding-top: 10px;
+      }
+
+      .profile-img {
+        width: 180px;
+        height: 180px;
+        left: 0;
+      }
+
+      .banner {
+        margin-top: -80px;
+      }
+
+      .container {
+        padding: 0 10px; /* szűkebb margó mobilon */
       }
     }
   </style>
@@ -205,8 +209,8 @@
     <div class="container top-section">
       <div class="name-title">
         <div class="name">Balint Kiraly, PhD</div>
-        <div class="title">Postdoctoral Researcher in Cognitive Neuroscience</div>
-        <div class="title">at the Medical University of Vienna</div>
+        <div class="title">Postdoctoral Researcher in Cognitive Neuroscience </div>
+        <div class="title">at the Medical University of Vienna </div>
       </div>
     </div>
   </div>
@@ -248,3 +252,4 @@
 
 </body>
 </html>
+
