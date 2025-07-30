@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="hu">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CV - Balint Kiraly, PhD</title>
-  <link rel="icon" type="image/png" href="favicon_64x64.png">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Balint Kiraly, PhD</title>
+  <link rel="icon" type="image/png" href="favicon_64x64.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet" />
   <style>
     * {
       box-sizing: border-box;
@@ -49,75 +49,103 @@
     .container {
       max-width: 700px;
       margin: 0 auto;
-      padding: 40px 20px;
+      padding: 0 20px;
     }
 
-    .header {
-      display: flex;
-      align-items: center;
-      margin-bottom: 30px;
+    .highlight-section {
+      background-color: #f1f4f5;
+      color: #1a1a1a;
+      padding: 10px 20px 5px;
+      text-align: left;
     }
 
-    .header img {
-      height: 60px;
-      width: auto;
-      margin-right: 15px;
-    }
-
-    .header h1 {
-      font-size: 26px;
+    .name {
+      font-size: 30px;
       font-weight: 600;
+      margin-bottom: 4px;
+      text-align: left;
     }
 
-    section {
-      margin-bottom: 40px;
+    .title {
+      font-size: 18px;
+      color: #444;
+      margin-bottom: 10px;
+      text-align: left;
     }
 
-    h2 {
+    .banner {
+      background-color: #f1f4f5;
+      padding-bottom: 30px;
+      position: relative;
+    }
+
+    .banner img {
+      width: 260px;
+      height: 260px;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto;
+      border-radius: 130px;
+      filter: grayscale(30%) contrast(110%);
+    }
+
+    .intro {
+      font-size: 16px;
+      text-align: justify;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding: 40px 0;
+    }
+
+    .intro span {
       font-size: 20px;
       font-weight: 600;
-      margin-bottom: 10px;
+      display: block;
+      margin-bottom: 5px;
       color: #1a1a1a;
     }
 
-    ul {
+    .point-list {
+      margin-top: 0;
       padding-left: 20px;
     }
 
-    li {
-      margin-bottom: 8px;
+    .point-list li {
+      margin-bottom: 6px;
     }
 
-    a {
+    /* Link fekete színnel, aláhúzással hoverre */
+    .container a {
       color: black;
       text-decoration: none;
     }
 
-    a:hover {
+    .container a:hover {
       text-decoration: underline;
     }
 
     @media (max-width: 600px) {
+      .name {
+        font-size: 24px;
+      }
+
+      .title {
+        font-size: 16px;
+      }
+
+      .intro {
+        font-size: 15px;
+      }
+
       nav a {
         margin: 0 15px;
         font-size: 14px;
       }
 
-      .header {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      .header img {
-        margin-bottom: 10px;
-      }
-
-      .header h1 {
-        font-size: 22px;
-      }
-
-      h2 {
-        font-size: 18px;
+      .banner img {
+        width: 180px;
+        height: 180px;
       }
     }
   </style>
@@ -125,74 +153,50 @@
 <body>
 
   <nav>
-    <a href="index.html">Home</a>
+    <a href="#home">Home</a>
     <a href="#research">Research</a>
-    <a href="cv.html">CV</a>
+    <a href="#cv">CV</a>
     <a href="publications.html">Publications</a>
   </nav>
 
-  <div class="container">
-    <div class="header">
-      <img src="favikon.png" alt="Logo">
-      <h1>Curriculum Vitae</h1>
+  <div class="highlight-section">
+    <div class="container">
+      <div class="name">Balint Kiraly, PhD</div>
+      <div class="title">Postdoctoral Researcher in Cognitive Neuroscience at the Medical University of Vienna</div>
     </div>
+  </div>
 
-    <section>
-      <h2>Basic Information</h2>
-      <ul>
-        <li>Date of Birth: 09/01/1994</li>
-        <li>Place of Birth: Budapest, Hungary</li>
-        <li>Nationality: Hungarian</li>
-        <li>Email: <a href="mailto:balint.kiraly@meduniwien.ac.at">balint.kiraly@meduniwien.ac.at</a>, <a href="mailto:kiralybbalint@gmail.com">kiralybbalint@gmail.com</a></li>
-        <li>Phone: +36 20 418 7150</li>
-      </ul>
-    </section>
+  <div class="banner">
+    <img src="kepek/banner.jpg" alt="Bemutatkozó kép" />
+  </div>
 
-    <section>
-      <h2>Current Position</h2>
-      <p>Postdoctoral Researcher at the <a href="https://data-science.meduniwien.ac.at/institute/artificial-intelligence/team/" target="_blank">Medical University of Vienna</a>, Department of Artificial Intelligence and Decision Support.</p>
-      <p>In 2025, he was awarded the prestigious EMBO Postdoctoral Fellowship for his work on neuromodulator-mediated continual learning, a field at the intersection of neuroscience and artificial intelligence.</p>
-    </section>
+  <div class="container">
+    <div class="intro">
+      <p>
+        <span>About me</span>
+        I am a neuroscientist fascinated by how the brain adapts to ever-changing environments. I focus on neuromodulatory
+        processes that support this remarkable flexibility. I combine tools from artificial intelligence and physics to model
+        and analyze neural dynamics. My goal is to uncover the principles of learning and plasticity in the healthy brain—and how
+        these processes are disrupted in neurodegenerative diseases.
+        <br /><br />
+        Currently, I work as a postdoctoral researcher at the
+        <a href="https://data-science.meduniwien.ac.at/institute/artificial-intelligence/team/" target="_blank" rel="noopener noreferrer">
+          Medical University of Vienna
+        </a>,
+        in the Department of Artificial Intelligence and Decision Support.
+        <br /><br />
+        In 2025, I was honored to receive the <strong>EMBO Postdoctoral Fellowship</strong>. My research focuses on
+        <em>neuromodulator-mediated continual learning</em>, exploring how the brain continuously adapts through neuromodulatory mechanisms.
+      </p>
 
-    <section>
-      <h2>Education</h2>
-      <ul>
-        <li>2018–2023: PhD in Biological Physics, Eötvös Loránd University (Summa Cum Laude)</li>
-        <li>2016–2018: MSc in Physics, Budapest University of Technology and Economics (Excellent)</li>
-        <li>2013–2016: BSc in Physics, Budapest University of Technology and Economics (Excellent)</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Fellowships & Awards</h2>
-      <ul>
-        <li>EMBO Postdoctoral Fellowship (2025)</li>
-        <li>HUN-REN KOKI Publication Award (2023)</li>
-        <li>FRM travel Grant (FENS Regional Meeting, Algarve) (2023)</li>
-        <li>Stephen W. Kuffler Scholarship (2022)</li>
-        <li>New National Excellence Programme (2021, 2020, 2019)</li>
-        <li>FENS-IBRO/PERC Conference Grant (2020)</li>
-        <li>Undergraduate Scientific Awards (2019, 2018, 2017)</li>
-        <li>Excellent Student and Scientific Scholarships (2017–2018)</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Research Interests</h2>
-      <ul>
-        <li>Neuromodulator-mediated continual learning</li>
+      <p><span>Key areas of focus:</span></p>
+      <ul class="point-list">
         <li>Neural adaptation and plasticity</li>
-        <li>Computational modeling and artificial intelligence</li>
-        <li>Neurodegenerative disorders</li>
+        <li>Neuromodulation and network-level changes</li>
+        <li>Computational modeling using AI tools</li>
+        <li>Bridging theory and experiment in brain research</li>
       </ul>
-    </section>
-
-    <section>
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:balint.kiraly@meduniwien.ac.at">balint.kiraly@meduniwien.ac.at</a></p>
-      <p>Website: <a href="https://balintkiraly.github.io" target="_blank">balintkiraly.github.io</a></p>
-    </section>
-
+    </div>
   </div>
 
 </body>
