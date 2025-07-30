@@ -35,9 +35,17 @@
     }
 
     .nav-logo {
-      height: 40px;
+      height: 60px;
       width: auto;
       cursor: pointer;
+      flex-shrink: 0;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 40px;
+      flex-grow: 1;
+      justify-content: center;
     }
 
     nav a {
@@ -134,7 +142,7 @@
 
     @media (max-width: 600px) {
       .nav-logo {
-        height: 30px;
+        height: 45px;
       }
 
       .name {
@@ -153,6 +161,10 @@
         font-size: 14px;
       }
 
+      .nav-links {
+        gap: 20px;
+      }
+
       .banner img {
         width: 180px;
         height: 180px;
@@ -162,15 +174,15 @@
 </head>
 <body>
 
- <nav>
-  <img src="logo.png" alt="Logo" class="nav-logo" />
-  <div class="nav-links">
-    <a href="#home">Home</a>
-    <a href="#research">Research</a>
-    <a href="#cv">CV</a>
-    <a href="publications.html">Publications</a>
-  </div>
-</nav>
+  <nav>
+    <img src="logo.png" alt="Logo" class="nav-logo" />
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#research">Research</a>
+      <a href="#cv">CV</a>
+      <a href="publications.html">Publications</a>
+    </div>
+  </nav>
 
   <div class="highlight-section">
     <div class="container top-section">
