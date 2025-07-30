@@ -83,7 +83,7 @@
 
     .banner {
       background-color: transparent;
-      margin-top: -100px;
+      margin-top: -100px; /* Fentebb húzza a képet, átfedés miatt */
       padding-bottom: 30px;
       position: relative;
       z-index: 2;
@@ -102,7 +102,7 @@
       border-radius: 130px;
       filter: grayscale(30%) contrast(110%);
       position: relative;
-      left: 180px;
+      left: 180px; /* jobbra tolás */
     }
 
     .container {
@@ -118,7 +118,7 @@
       flex-direction: column;
       gap: 10px;
       padding: 0px 0;
-      margin-top: -40px; /* fentebb hozza a szöveget */
+      margin-top: -40px;
     }
 
     .intro span {
@@ -166,11 +166,11 @@
       }
 
       .name {
-        font-size: 22px; /* kisebb cím mobilon */
+        font-size: 24px;
       }
 
       .title {
-        font-size: 14px; /* kisebb alcímek mobilon */
+        font-size: 16px;
       }
 
       .intro {
@@ -180,15 +180,11 @@
       .profile-img {
         width: 180px;
         height: 180px;
-        left: 0;
+        left: 0; /* Mobilon középre vissza */
       }
 
       .banner {
         margin-top: -80px;
-      }
-
-      .container {
-        padding: 0 10px; /* szűkebb margó mobilon */
       }
     }
   </style>
@@ -211,6 +207,7 @@
         <div class="name">Balint Kiraly, PhD</div>
         <div class="title">Postdoctoral Researcher in Cognitive Neuroscience </div>
         <div class="title">at the Medical University of Vienna </div>
+        
       </div>
     </div>
   </div>
@@ -252,4 +249,3 @@
 
 </body>
 </html>
-
