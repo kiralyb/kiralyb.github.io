@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Balint Kiraly, PhD</title>
-  <link rel="icon" type="image/png" href="favicon_64x64.png" />
+  <link rel="icon" type="image/png" href="favicon_64x64_edge_touch.png" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet" />
   <style>
     * {
@@ -22,7 +22,7 @@
 
     nav {
       background-color: #fff;
-      height: 60px; /* menüsor magasság marad */
+      height: 60px;
       position: sticky;
       top: 0;
       z-index: 1000;
@@ -31,10 +31,10 @@
     }
 
     .nav-logo {
-      height: 90px; /* logó nagy méret */
+      height: 90px;
       position: absolute;
       left: 30px;
-      top: -10px; /* picit lejjebb került */
+      top: -10px;
       z-index: 2;
     }
 
@@ -45,6 +45,7 @@
       transform: translate(-50%, -50%);
       display: flex;
       gap: 25px;
+      white-space: nowrap;
     }
 
     nav a {
@@ -87,37 +88,40 @@
       text-align: left;
     }
 
-    .banner {
-      background-color: #f1f4f5;
-      padding-bottom: 30px;
-      position: relative;
+    .about-block {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      padding: 40px 20px;
+      flex-wrap: wrap;
     }
 
-    .banner img {
+    .about-image img {
       width: 260px;
       height: 260px;
       object-fit: cover;
+      border-radius: 50%;
       display: block;
-      margin: 0 auto;
-      border-radius: 130px;
       filter: grayscale(30%) contrast(110%);
     }
 
-    .intro {
-      font-size: 16px;
-      text-align: justify;
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      padding: 40px 0;
+    .about-text {
+      max-width: 500px;
+      text-align: left;
     }
 
-    .intro span {
+    .about-text span {
       font-size: 20px;
       font-weight: 600;
       display: block;
-      margin-bottom: 5px;
-      color: #1a1a1a;
+      margin-bottom: 10px;
+    }
+
+    .about-text p {
+      font-size: 16px;
+      line-height: 1.7;
+      text-align: justify;
     }
 
     .point-list {
@@ -146,10 +150,10 @@
       }
 
       .nav-links {
-        gap: 20px;
-        flex-wrap: wrap;
-        top: 50%;
-        transform: translate(-50%, -50%);
+        gap: 12px;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        white-space: nowrap;
       }
 
       nav a {
@@ -164,13 +168,22 @@
         font-size: 16px;
       }
 
-      .intro {
-        font-size: 15px;
+      .about-block {
+        flex-direction: column;
+        text-align: center;
       }
 
-      .banner img {
-        width: 180px;
-        height: 180px;
+      .about-text {
+        text-align: justify;
+      }
+
+      .about-text span {
+        text-align: left;
+      }
+
+      .about-image img {
+        width: 200px;
+        height: 200px;
       }
     }
   </style>
@@ -189,43 +202,23 @@
 
   <div class="highlight-section">
     <div class="container top-section">
-      <div class="name-title">
-        <div class="name">Balint Kiraly, PhD</div>
-        <div class="title">Postdoctoral Researcher in Cognitive Neuroscience at the Medical University of Vienna</div>
-      </div>
+      <div class="name">Balint Kiraly, PhD</div>
+      <div class="title">Postdoctoral Researcher in Cognitive Neuroscience at the Medical University of Vienna</div>
     </div>
   </div>
 
-  <div class="banner">
-    <img src="kepek/banner.jpg" alt="Bemutatkozó kép" />
-  </div>
-
-  <div class="container">
-    <div class="intro">
+  <div class="about-block">
+    <div class="about-image">
+      <img src="kepek/banner.jpg" alt="Bemutatkozó kép" />
+    </div>
+    <div class="about-text">
+      <span>About me</span>
       <p>
-        <span>About me</span>
         I am a neuroscientist fascinated by how the brain adapts to ever-changing environments. I focus on neuromodulatory
         processes that support this remarkable flexibility. I combine tools from artificial intelligence and physics to model
-        and analyze neural dynamics. My goal is to uncover the principles of learning and plasticity in the healthy brain—and how
-        these processes are disrupted in neurodegenerative diseases.
-        <br /><br />
-        Currently, I work as a postdoctoral researcher at the
-        <a href="https://data-science.meduniwien.ac.at/institute/artificial-intelligence/team/" target="_blank" rel="noopener noreferrer">
-          Medical University of Vienna
-        </a>,
-        in the Department of Artificial Intelligence and Decision Support.
-        <br /><br />
-        In 2025, I was honored to receive the <strong>EMBO Postdoctoral Fellowship</strong>. My research focuses on
-        <em>neuromodulator-mediated continual learning</em>, exploring how the brain continuously adapts through neuromodulatory mechanisms.
+        and analyze neural dynamics. My goal is to uncover the principles of learning and plasticity in the healthy brain—
+        and how these processes are disrupted in neurodegenerative diseases.
       </p>
-
-      <p><span>Key areas of focus:</span></p>
-      <ul class="point-list">
-        <li>Neural adaptation and plasticity</li>
-        <li>Neuromodulation and network-level changes</li>
-        <li>Computational modeling using AI tools</li>
-        <li>Bridging theory and experiment in brain research</li>
-      </ul>
     </div>
   </div>
 
