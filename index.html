@@ -70,8 +70,10 @@
     .highlight-section {
       background-color: #f1f4f5;
       color: #1a1a1a;
-      padding: 10px 20px 5px;
+      padding: 30px 20px 100px; /* hosszabb alsó padding az átfedéshez */
       text-align: left;
+      position: relative;
+      z-index: 1;
     }
 
     .name {
@@ -93,7 +95,10 @@
       align-items: center;
       justify-content: center;
       gap: 40px;
-      padding: 40px 20px;
+      padding: 0 20px;
+      margin-top: -130px; /* kép felfelé tolása az átfedéshez */
+      position: relative;
+      z-index: 2;
       flex-wrap: wrap;
     }
 
@@ -125,7 +130,7 @@
     }
 
     .point-list {
-      margin-top: 0;
+      margin-top: 30px;
       padding-left: 20px;
     }
 
@@ -171,6 +176,7 @@
       .about-block {
         flex-direction: column;
         text-align: center;
+        margin-top: -100px;
       }
 
       .about-text {
@@ -220,6 +226,26 @@
         and how these processes are disrupted in neurodegenerative diseases.
       </p>
     </div>
+  </div>
+
+  <div class="container">
+    <ul class="point-list">
+      <li>Neural adaptation and plasticity</li>
+      <li>Neuromodulation and network-level changes</li>
+      <li>Computational modeling using AI tools</li>
+      <li>Bridging theory and experiment in brain research</li>
+    </ul>
+
+    <p style="margin-top: 30px;">
+      Currently, I work as a postdoctoral researcher at the
+      <a href="https://data-science.meduniwien.ac.at/institute/artificial-intelligence/team/" target="_blank" rel="noopener noreferrer">
+        Medical University of Vienna
+      </a>,
+      in the Department of Artificial Intelligence and Decision Support.
+      <br /><br />
+      In 2025, I was honored to receive the <strong>EMBO Postdoctoral Fellowship</strong>. My research focuses on
+      <em>neuromodulator-mediated continual learning</em>, exploring how the brain continuously adapts through neuromodulatory mechanisms.
+    </p>
   </div>
 
 </body>
