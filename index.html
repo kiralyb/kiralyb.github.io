@@ -22,30 +22,29 @@
 
     nav {
       background-color: #fff;
-      height: 100px;
-      position: relative;
-      display: flex;
-      align-items: center;
-      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+      height: 60px; /* kisebb menüsor */
       position: sticky;
       top: 0;
       z-index: 1000;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+      position: relative;
     }
 
     .nav-logo {
-      height: 90px;
-      width: auto;
-      margin-left: 30px;
-      flex-shrink: 0;
-      z-index: 1;
+      height: 90px; /* logó mérete marad nagy */
+      position: absolute;
+      left: 30px;
+      top: -15px; /* így kilóg egy kicsit a nav-ból, látványosabb */
+      z-index: 2;
     }
 
     .nav-links {
       position: absolute;
       left: 50%;
-      transform: translateX(-50%);
+      top: 50%;
+      transform: translate(-50%, -50%);
       display: flex;
-      gap: 40px;
+      gap: 25px;
     }
 
     nav a {
@@ -142,14 +141,15 @@
     @media (max-width: 600px) {
       .nav-logo {
         height: 60px;
-        margin-left: 20px;
+        top: 0;
+        left: 15px;
       }
 
       .nav-links {
         gap: 20px;
         flex-wrap: wrap;
-        top: 70px;
-        transform: translateX(-50%);
+        top: 50%;
+        transform: translate(-50%, -50%);
       }
 
       nav a {
