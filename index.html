@@ -81,6 +81,30 @@
       color: #444;
     }
 
+    .banner {
+      background-color: transparent;
+      margin-top: -100px;
+      padding-bottom: 30px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .profile-image-wrapper {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .profile-img {
+      width: 260px;
+      height: 260px;
+      object-fit: cover;
+      border-radius: 130px;
+      filter: grayscale(30%) contrast(110%);
+      position: relative;
+      left: 180px; /* Eredeti desktop eltolás */
+    }
+
     .container {
       max-width: 700px;
       margin: 0 auto;
@@ -93,7 +117,8 @@
       display: flex;
       flex-direction: column;
       gap: 10px;
-      padding-top: 20px;
+      padding: 0px 0;
+      margin-top: -40px;
     }
 
     .intro span {
@@ -120,17 +145,6 @@
 
     .container a:hover {
       text-decoration: underline;
-    }
-
-    /* ======== FLOATING IMAGE ======== */
-    .profile-img-floating {
-      width: 220px;
-      height: 220px;
-      object-fit: cover;
-      border-radius: 110px;
-      filter: grayscale(30%) contrast(110%);
-      float: right;
-      margin: 0 0 20px 30px;
     }
 
     /* ======= MOBILE STYLES ======= */
@@ -162,12 +176,21 @@
         text-align: center;
       }
 
-      .profile-img-floating {
-        float: none;
-        display: block;
-        margin: 0 auto 20px;
+      .profile-img {
         width: 160px;
         height: 160px;
+        position: static;
+        margin: 0 auto;
+        display: block;
+      }
+
+      .profile-image-wrapper {
+        justify-content: center;
+      }
+
+      .banner {
+        margin-top: -20px;
+        padding-bottom: 20px;
       }
 
       .intro {
@@ -204,11 +227,14 @@
     </div>
   </div>
 
+  <div class="banner">
+    <div class="profile-image-wrapper">
+      <img src="kepek/banner.jpg" alt="Bemutatkozó kép" class="profile-img" />
+    </div>
+  </div>
+
   <div class="container">
     <div class="intro">
-      <!-- Floating profile image -->
-      <img src="kepek/banner.jpg" alt="Bemutatkozó kép" class="profile-img-floating" />
-
       <p>
         <span>About me</span>
         I am a neuroscientist fascinated by how the brain adapts to ever-changing environments. I focus on neuromodulatory
@@ -238,3 +264,4 @@
 
 </body>
 </html>
+
