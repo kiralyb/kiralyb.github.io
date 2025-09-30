@@ -84,10 +84,9 @@
     .banner {
       background-color: transparent;
       margin-top: -100px;
-      padding-bottom: 0;
+      padding-bottom: 30px;
       position: relative;
       z-index: 2;
-      clear: both;
     }
 
     .profile-image-wrapper {
@@ -102,8 +101,8 @@
       object-fit: cover;
       border-radius: 130px;
       filter: grayscale(30%) contrast(110%);
-      float: right;
-      margin: 0 0 20px 20px;
+      position: relative;
+      left: 180px; /* Eredeti desktop eltolás */
     }
 
     .container {
@@ -118,9 +117,8 @@
       display: flex;
       flex-direction: column;
       gap: 10px;
-      padding: 0;
-      margin-top: 0; /* fontos: ne legyen felesleges tér */
-      clear: both;
+      padding: 0px 0;
+      margin-top: -40px;
     }
 
     .intro span {
@@ -178,17 +176,12 @@
         text-align: center;
       }
 
-      .highlight-section {
-        padding-bottom: 180px; /* színes háttér mélyebbre nyúlik a kép mögé */
-      }
-
       .profile-img {
-        width: 180px;
-        height: 180px;
-        float: none;
-        margin: 0 auto 20px auto;
-        display: block;
+        width: 160px;
+        height: 160px;
         position: static;
+        margin: 0 auto;
+        display: block;
       }
 
       .profile-image-wrapper {
@@ -196,14 +189,13 @@
       }
 
       .banner {
-        margin-top: -100px;
-        padding-bottom: 0;
+        margin-top: -20px;
+        padding-bottom: 20px;
       }
 
       .intro {
         font-size: 14px;
         padding-top: 10px;
-        margin-top: -20px;
       }
 
       .intro span {
